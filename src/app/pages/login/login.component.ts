@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
   logoPath: string = 'assets/images/logo.png';
+  mobileLoginTop: string = 'assets/images/mobile-login.png';
 }
