@@ -1,2 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@fortawesome/fontawesome-free/css/all.css";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+  background-color: #FAF9F7;
+  font-family: "Ubuntu", sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 1px 0px #5C747814;
+  box-shadow: 0px 2px 1px 0px #5C74780F;
+  box-shadow: 0px 1px 3px 0px #5C74781A;
+}
+
+.valid {
+  background: #18B46E1A;
+  border-radius: 21px;
+  color: #18B46E;
+  font-size: 12px;
+  margin: 5px;
+  padding: 8px 13px;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid #E4E8E9;
+}

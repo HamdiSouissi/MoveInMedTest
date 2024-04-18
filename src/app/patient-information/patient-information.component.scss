@@ -1,0 +1,131 @@
+@media (max-width: 1023px) {
+  .top {
+    flex-wrap: wrap;
+  }
+}
+
+.patient-id-card {
+  display: flex;
+  flex-direction: column;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-item {
+      display: flex;
+      align-items: center;
+
+      .profile-picture {
+        color: #1892b4;
+        font-size: 4em;
+        margin-right: 10px;
+      }
+
+      .information {
+        display: flex;
+        flex-wrap: wrap;
+
+        .patient-name {
+          font-size: 16px;
+          font-weight: 500;
+          &::after {
+            content: ", ";
+          }
+        }
+
+        .patient-name, .patient-age {
+          display: inline-block;
+          margin: 0;
+        }
+
+        .full-informations {
+          width: 100%;
+          font-size: 14px;
+          margin-top: 9px;
+        }
+      }
+    }
+
+    .right-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-family: "Open Sans", sans-serif;
+
+    .info-line {
+      margin: 8px 15px;
+      color: #5C7478;
+      font-size: 12px;
+      font-weight: 600;
+
+      a.patient-phone {
+        color: #1892B4;
+        font-weight: 500;
+        font-size: 13px;
+        font-family: "Ubuntu", sans-serif;
+      }
+
+      span.praticien, span.medecin {
+        color: #18B46E;
+        font-size: 14px;
+        font-weight: 600;
+
+        i {
+          background: #18B46E1A;
+          padding: 4px 5px;
+          border-radius: 50%;
+          margin-right: 5px;
+        }
+      }
+
+      span.protocol {
+        background: #1892B41A;
+        color: #1892B4;
+        padding: 3px 6px;
+        font-size: 14px;
+        font-weight: 600;
+        margin-left: 20px;
+      }
+
+      span.pathology {
+        color: #000;
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 64px;
+
+        i {
+          color: #1892B4;
+        }
+      }
+
+      span.start-date {
+        color: #000;
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 43px;
+      }
+
+      span.medecin {
+        margin-left: 40px;
+      }
+
+      span.praticien {
+        margin-left: 14px;
+      }
+
+      a.patient-phone {
+        margin-left: 29px;
+      }
+    }
+  }
+}

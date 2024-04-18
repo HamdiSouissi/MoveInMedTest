@@ -1,0 +1,52 @@
+<div class="patient-id-card card">
+  <div class="top">
+    <div class="left-item">
+        <div class="profile-picture">
+          <i class="fa-regular fa-circle-user"></i>
+        </div>
+        <div class="information">
+          <div class="patient-name">{{patientData.firstName}} {{patientData.lastName}}</div>
+          <div class="patient-age">{{patientData.age}} ans</div>
+          <div class="full-informations">
+            Né.e le 14/07/1980, de sexe {{patientData.sex}} {{patientData.gender}}
+          </div>
+        </div>
+
+    </div>
+    <div class="right-item">
+      <div class="account-status valid">
+        <i class="fa-regular fa-circle-user"></i>
+        Compte activé
+      </div>
+      <div class="identity-status valid">
+        <i class="fa-regular fa-address-card"></i>
+        Identité validée
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="content">
+    <div class="info-col">
+      <div class="info-line">
+        Téléphone patient.e : <a href="tel:{{patientData.phone}}" class="patient-phone">{{patientData.phone}}</a>
+      </div>
+      <div class="info-line">
+        Praticien.ne référent.e : <span class="praticien"><i class="fa-solid fa-user-doctor"></i>{{patientData.referringPractitionerFirstName}} {{patientData.referringPractitionerLastName}}</span>
+      </div>
+      <div class="info-line">
+        Médecin référent.e <span class="medecin"><i class="fa-solid fa-user-doctor"></i>{{patientData.referringDoctorFirstName}} {{patientData.referringDoctorLastName}}</span>
+      </div>
+    </div>
+    <div class="info-col">
+      <div class="info-line">
+        Protocole en cours : <span class="protocol">{{patientData.protocol}}</span>
+      </div>
+      <div class="info-line">
+        Pathologie : <span class="pathology"><i class="fa-solid fa-virus-covid"></i> {{patientData.pathology}}</span>
+      </div>
+      <div class="info-line">
+        Date de début : <span class="start-date">{{ patientData.protocolStartDate | dateFormat }}</span>
+      </div>
+    </div>
+  </div>
+</div>

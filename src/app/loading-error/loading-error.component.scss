@@ -1,0 +1,22 @@
+.error-content {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5% 0;
+}
+
+.error-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #B3182A;
+}
+
+.error-description {
+  font-size: 13px;
+  line-height: 19.5px;
+  margin: 11px 0;
+  color: #2E3A3C;
+  font-family: "Open Sans", sans-serif;
+}
